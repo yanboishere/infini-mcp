@@ -41,6 +41,65 @@ INFINI_ENV=sandbox  # or production
 uv run server.py
 ```
 
+## Connect to Infini's MCP Server
+
+### Cursor
+
+To add Infini MCP to Cursor, add the following to your `~/.cursor/mcp.json` file:
+
+```json
+{
+  "mcpServers": {
+    "infini": {
+      "command": "uv",
+      "args": ["run", "server.py"],
+      "cwd": "/Users/yanbo/infini-mcp"
+    }
+  }
+}
+```
+
+To learn more, see the [Cursor documentation](https://docs.cursor.com/).
+
+### VS Code
+
+To add Infini MCP to VS Code, add the following to your `.vscode/mcp.json` file in your workspace:
+
+```json
+{
+  "servers": {
+    "infini": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["run", "server.py"],
+      "cwd": "/Users/yanbo/infini-mcp"
+    }
+  }
+}
+```
+
+To learn more, see the [VS Code documentation](https://code.visualstudio.com/docs/).
+
+### Claude Code
+
+To add Infini MCP to Claude Code, run the following command:
+
+```bash
+claude mcp add --transport stdio infini uv run server.py
+```
+
+To learn more, see the [Claude Code documentation](https://claude.ai/code).
+
+### ChatGPT
+
+To add Infini MCP to ChatGPT, you need to configure it through the ChatGPT interface:
+
+1. Go to Settings > Beta features > MCP Servers
+2. Click "Add MCP Server"
+3. Select "Local Server"
+4. Enter the command: `uv run server.py`
+5. Set the working directory: `/Users/yanbo/infini-mcp`
+
 ## Available Tools
 
 ### Order Management
