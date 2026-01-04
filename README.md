@@ -229,4 +229,4 @@ Webhook uses `timestamp + body` for signature verification.
 For issues, please refer to [Infini Official Documentation](https://developer.infini.money/docs/) or contact technical support.
 
 ## LICENSE
-MIT
+GNU AFFERO GENERAL PUBLIC LICENSE V3.0
