@@ -227,3 +227,6 @@ Webhook uses `timestamp + body` for signature verification.
 ## Support and Contact
 
 For issues, please refer to [Infini Official Documentation](https://developer.infini.money/docs/) or contact technical support.
+
+## LICENSE
+MIT
